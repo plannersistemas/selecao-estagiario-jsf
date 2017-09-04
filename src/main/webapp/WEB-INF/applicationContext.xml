@@ -34,6 +34,9 @@
 
 	<intercept-url pattern="/relatorios/**" access="isAuthenticated()" />
 		<intercept-url pattern="/clientes/**" access="isAuthenticated()" />
+		<intercept-url pattern="/cargos/**" access="isAuthenticated()" />
+		<intercept-url pattern="/funcionarios/**" access="isAuthenticated()" />
+		<intercept-url pattern="/promocao/**" access="isAuthenticated()" />
 		<intercept-url pattern="/Home.xhtml" access="isAuthenticated()" />
 		<intercept-url pattern="/AcessoNegado.xhtml" access="isAuthenticated()" />
 		<intercept-url pattern="/pedidos/**" access="hasAnyRole('VENDEDORES', 'AUXILIARES', 'ADMINISTRADORES')" />
